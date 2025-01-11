@@ -38,8 +38,18 @@ while True:
         print("Oops! The value you entered is not a valid number, please try again with a valid number")
 
 
-# def descending_order(num):
-#     # Bust a move right here
-#     return
+def descending_order(num):
+    # Bust a move right here
+    # Get the user_input and break it down
+    num_list = [] # create an empty array to store the number entered
+    for digits in str(user_input):
+        num_list.append(digits)
+    descending_num_list = sorted(num_list, reverse=True) # rearrage the list in descending order
+    str_descending_order_num = ''.join(map(str, descending_num_list)) # join the 
+    print(str_descending_order_num)
+    descending_order_num = int(str_descending_order_num) # make the string a number (this is optional though)
+    print("The number in reverse is {}".format(descending_order_num))
+    return ""
     
-# result = descending_order(user_input)
+result = descending_order(user_input)
+print(result)
