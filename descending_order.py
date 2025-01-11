@@ -48,8 +48,7 @@ def descending_order(num):
     descending_order_num = ''.join(map(str, descending_num_list)) # join the 
     print(descending_order_num)
     # descending_order_num = int(str_descending_order_num) # make the string a number (this is optional though)
-    print("The number in reverse is {}".format(descending_order_num))
-    return ""
+    return print("The number in reverse is {}".format(descending_order_num))
     
 result = descending_order(user_input)
 print(result)
