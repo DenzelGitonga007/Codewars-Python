@@ -21,29 +21,25 @@ def welcome():
     return " " # to avoid it from printing "None"
 
 print(welcome())
-# Get the user input
-user_input = int(input("Enter the positive number you'd like to test out: "))
+
+# Create a loop to let the user enter a positive integer
+while True:
+    try:
+        # Get the user input
+        user_input = int(input("Enter the positive number you'd like to test out: "))
+        if user_input >= 0:
+            # Break the loop and proceed to break it down 
+            print("Great, you entered {}, now let's work on it".format(user_input))
+            break
+        else:
+            print("Oops! You have entered a negative number...")
+            print("Please try again...")
+    except ValueError:
+        print("Oops! The value you entered is not a valid number, please try again with a valid number")
 
 
-def test_the_number():
-    # Create a loop to let the user enter a positive integer
-    while True:
-        try:
-            # Get the user input
-            if user_input < 0:
-                print("Oops! You have entered a negative number...")
-                print("Please try again...")
-            else:
-                # Break the loop and proceed to break it down 
-                print("Great, you entered {}, now let's work on it".format(user_input))
-                break # the break point of the loop
-        except ValueError:
-            print("Oops! The value you entered is not a valid number, please try again with a valid number")
-
-
-def descending_order(num):
-    # Bust a move right here
-    test_the_number()
+# def descending_order(num):
+#     # Bust a move right here
+#     return
     
-
-result = descending_order(user_input)
+# result = descending_order(user_input)
