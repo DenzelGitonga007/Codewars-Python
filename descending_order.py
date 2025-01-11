@@ -26,8 +26,8 @@ print(welcome())
 while True:
     try:
         # Get the user input
-        user_input = int(input("Enter the positive number you'd like to test out: "))
-        if user_input >= 0:
+        user_input = input("Enter the positive number you'd like to test out: ")
+        if int(user_input) >= 0:
             # Break the loop and proceed to break it down 
             print("Great, you entered {}, now let's work on it".format(user_input))
             break
@@ -45,9 +45,9 @@ def descending_order(num):
     for digits in str(user_input):
         num_list.append(digits)
     descending_num_list = sorted(num_list, reverse=True) # rearrage the list in descending order
-    str_descending_order_num = ''.join(map(str, descending_num_list)) # join the 
-    print(str_descending_order_num)
-    descending_order_num = int(str_descending_order_num) # make the string a number (this is optional though)
+    descending_order_num = ''.join(map(str, descending_num_list)) # join the 
+    print(descending_order_num)
+    # descending_order_num = int(str_descending_order_num) # make the string a number (this is optional though)
     print("The number in reverse is {}".format(descending_order_num))
     return ""
     
