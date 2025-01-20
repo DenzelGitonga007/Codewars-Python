@@ -24,15 +24,15 @@ def persistence(n):
     while len(list_num) > 1: # Check if the number is one digit long
         # Multiply all the elements in the list
         multiply = int(list_num[0]) * int(list_num[1])
+        # Set the value of the multiplication result
+        multiply = 1
+        for digit in list_num:
+            multiply *= int(digit) # assign the multiply to the result of multiplying the digits
         count += 1 # increment count
         list_num = list(str(multiply)) # let the new value (multiply), be the new item on the list
         
-        print(multiply)
         # break
-    print("How many times the multiplication has occured {}".format(count))
+    return count   
 
-     
-        
-
-print(persistence(39))
+print(persistence(4))
         
