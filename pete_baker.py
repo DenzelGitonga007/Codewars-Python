@@ -14,7 +14,7 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 
 
 def cakes(recipe, available):
-    # List to store how many cakes can be made from each ingredient
+    # List to store how many cakes can be made from each ingredient...
     max_cakes_per_ingredient = []
     
     # Loop through each ingredient in the recipe
